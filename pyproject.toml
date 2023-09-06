@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "s3downloader"
 version = "0.1.0"
 authors = [
-  { name="Kumi Mitterer", email="s3downloader@kumi.email" },
+  { name="Kumi Systems e.U.", email="support@kumi.support" },
 ]
 description = "Simple Python CLI tool to download files from S3"
 readme = "README.md"
