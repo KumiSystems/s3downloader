@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "s3downloader"
+version = "0.1.0"
+authors = [
+  { name="Kumi Mitterer", email="s3downloader@kumi.email" },
+]
+description = "Simple Python CLI tool to download files from S3"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "boto3",
+]
+
+[project.urls]
+"Homepage" = "https://kumig.it/kumitterer/s3downloader"
+"Bug Tracker" = "https://kumig.it/kumitterer/s3downloader/issues"
+
+[project.scripts]
+s3downloader = "s3downloader.__main__:main"
